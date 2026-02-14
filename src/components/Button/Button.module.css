@@ -1,0 +1,23 @@
+/* src/components/Button/Button.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --btn-bg: #000000;       /* black */
+  --btn-text: #00ff7f;     /* replace with exact green from your Figma spec */
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 999px;  /* pill-like; adjust as per Figma */
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.button:hover {
+  cursor: pointer;
+  /* Optional: background-color: #111111; */
+}
