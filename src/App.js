@@ -1,8 +1,8 @@
 
 import Navbar from './Navbar/Navbar';
 import Hero from './Hero/Hero';
-import Section from './Components/Section/Section';
-import FilterSection from './Components/FilterSection/FilterSection';
+import Section from "./components/Section/Section";
+import FilterSection from "./components/FilterSection/FilterSection";
 import {fetchTopAlbums, fetchNewAlbums, fetchSongs} from './api/api'
 import { useEffect, useState } from 'react';
 import styles from "./App.module.css"
