@@ -2,7 +2,7 @@ import axios from "axios";
 export const backend_Endpoint = "https://qtify-backend.labs.crio.do";
 
 export const fetchTopAlbums = async()=>{  
-  console.log("in fetchTopAlbums...  " + `${backend_Endpoint}/albums/top`);
+  console.log("in fetchTopAlbums...  "  `${backend_Endpoint}/albums/top`);
       try {
         const resAlbum = await axios.get(`${backend_Endpoint}/albums/top`);
         
