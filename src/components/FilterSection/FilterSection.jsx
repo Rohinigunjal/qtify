@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
+
 import styles from "./FilterSection.module.css";
 import BasicTabs from '../BasicTabs/BasicTabs';
-import Card from '../Card/Card';
 import { CircularProgress } from '@mui/material';
 // import audio from '/some path'
 
