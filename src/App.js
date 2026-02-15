@@ -29,7 +29,7 @@ function App() {
     try{
       const res= await fetchTopAlbums();
       console.log("topalbum in generateTopAlbumSongs: " + res);
-    setTopAlbumSongs(res);
+    setTopAlbumSongs(res.data);
     }
     catch(error){
       console.log(error);
@@ -40,7 +40,7 @@ function App() {
   const generateNewAlbumSongs=async()=>{
     try{
       const res= await fetchNewAlbums();
-    setNewAlbumSongs(res);
+    setNewAlbumSongs(res.data);
     }
     catch(error){
       console.log(error);
@@ -52,8 +52,8 @@ function App() {
     try{
       console.log("generateSongs");
       const res=await fetchSongs();
-      setSongsData(res);
-      setFilteredData(res);
+      setSongsData(res.data);
+      setFilteredData(res.data);
     }
     catch(error){
       return null;
